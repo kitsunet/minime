@@ -3,7 +3,8 @@ import { getTime } from "../../utils/clockUtils";
 import styles from "./clock.module.scss";
 
 const Clock = () => {
-	const hourCycles = new Intl.Locale(navigator.language).hourCycle ?? ['h12'];
+	const locale = new Intl.Locale(navigator.language);
+	const hourCycles = locale.hourCycle ?? locale.getHourCycles();
 	const is12HourFormat = ["h11", "h12"].some(hourCycle => hourCycles.includes(hourCycle));
 
 	const [currentTime, setCurrentTime] = useState(getTime(new Date(), is12HourFormat));
