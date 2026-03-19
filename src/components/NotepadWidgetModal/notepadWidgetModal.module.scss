@@ -1,0 +1,14 @@
+@import "/src/styles/variables.scss";
+
+.notes {
+	resize: none;
+	height: 100%;
+	padding: 16px;
+	background-color: $widgetBackground;
+	color: $inputTextColor;
+	border-radius: $widgetBorderRadiusOnHover;
+	border: none;
+	&::placeholder {
+		color: $modalTextColor;
+	}
+}

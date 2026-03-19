@@ -1,0 +1,7 @@
+@import "/src/styles/variables.scss";
+
+.divider {
+	width: 100%;
+	border-bottom: 1px solid $widgetBorderColor;
+	border-radius: 10px;
+}

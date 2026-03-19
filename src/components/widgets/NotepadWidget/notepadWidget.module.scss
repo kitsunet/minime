@@ -1,15 +1,17 @@
 @import "/src/styles/variables.scss";
-.addNewWidget {
-	margin-left: 8px;
+@import "/src/styles/mixins.scss";
+
+.notepadWidget {
 	padding: 16px 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: $widgetBackground;
 	aspect-ratio: 1/1;
 	height: $widgetHeight;
+
 	border-radius: 50%;
 	border: 1px solid $widgetBorderColor;
-	background-color: $widgetBackground;
 
 	&:hover {
 		border-radius: $widgetBorderRadiusOnHover;
